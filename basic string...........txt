@@ -1,0 +1,72 @@
+basic string..........
+
+
+Basic String Questions....
+
+1....Print a string in Python.
+answer :
+
+n1=input("Enter the character : ");
+print(n1);
+
+2....Find the length of a string.
+answer : 
+
+n1=input("Enter the character ");
+print(len(n1));
+
+
+3...Access the first character of a string.
+answer:
+
+n1=input("Enter the character : ");
+print(n1[0]);
+
+4....Access the last character of a string.
+answer : 
+
+n1=input("Enter the character : ");
+print(n1[-1]);
+
+5....Convert a string to uppercase.
+answer : 
+
+n1=input("Enter the character : ");
+print(n1.upper());
+
+6....Convert a string to lowercase.
+answer:
+
+n1=input("Enter the character : ");
+print(n1.lower());
+
+7.....Reverse a string using slicing.
+answer :
+
+n1=input("Enter the character : ");
+print(n1[::-1]);
+
+8....Reverse a string using loop.
+answer : 
+n1=input("Enter the character : ");
+rev=" ";
+for i in n1:
+    rev=i+rev;
+print(rev);
+
+9....Count total characters in a string.
+answer : 
+
+n1=input("Enter the character : ");
+print(len(n1));
+
+10....Check whether a string is empty or not.
+answer : 
+
+n1=input("Enter the character : ");
+if(n1==""):
+    print("String is empity ");
+else:
+    print("String is not empity");
+
+
