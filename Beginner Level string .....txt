@@ -1,0 +1,102 @@
+Beginner Level string ....
+
+1....Check whether a string is palindrome or not.
+answer : 
+
+n1=input("Enter the word : ");
+if(n1==n1[::-1]):
+    print("it is a palandrome ");
+else:
+    print("It is not a palandrome");
+
+
+2.....Count vowels in a string.
+answer: 
+
+n1=input("Enter the word : ");
+count=0;
+for i in n1:
+    if(i=="a" or i=="e" or i=="i" or i=="o" or i=="u"):
+        count+=1;
+    
+print("Total vowels : ",count);    
+
+
+3.....Count consonants in a string.
+answer : 
+
+n1=input("Enter the word : ");
+count=0;
+for i in n1:
+    if(i!="a" and i!="e" and i!="i" and i!="o" and i!="u"):
+        count+=1;
+       
+    
+print("Total conconents : ",count);   
+
+
+4....Remove spaces from a string.
+answer : 
+
+n1=input("Enter the word : ");
+answer=n1.replace(" ","");
+print(answer);
+
+5....Find frequency of a character in a string.
+answer : 
+
+n1=input("Enter the word : ");
+a=input("Enter the frequency : ");
+answer= n1.count(a);
+print(answer);
+
+
+6....Replace one word with another in a string.
+answer : 
+
+n1=input("Enter the word : ");
+a=input("Enter the character do you want replace ");
+b=input("Enter the character : ");
+answer=n1.replace(a,b);
+print(answer);
+
+7....Count words in a sentence.
+answer : 
+
+n1=input("Enter the word : ");
+answer=n1.split();
+count=len(answer);
+print(count);
+
+8....Find ASCII value of a character.
+answer : 
+
+n1=input("Enter the chracter : ");
+print("ASCII value : ",ord(n1));
+
+9....Convert first letter of every word into uppercase.
+answer : 
+
+n1=input("Enter the word : ");
+answer=n1.capitalize();
+print(answer);
+
+10....Check whether two strings are equal or not.
+answer : 
+
+n1=input("Enter the word : ");
+n2=input("Enter the second word : ");
+if(n1==n2):
+    print("They are equal ");
+else:
+    print("They are not equal");
+
+
+
+
+
+
+
+
+
+
