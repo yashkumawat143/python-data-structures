@@ -1,0 +1,110 @@
+Intermediate Level Questions....
+
+1....Check whether two strings are anagrams.
+answer : 
+
+n1=input("Enter the word : ");
+n2=input("Enter the second word : ");
+if(sorted(n1)==sorted(n2)):
+    print("anagrams");
+else:
+    print("It is not a anagrams");
+
+
+2....Find duplicate characters in a string.
+answer : 
+
+n1=input("Enter the words : ");
+
+for i in n1:
+    if(n1.count(i)>1):
+        print(i);
+
+3....Remove duplicate characters from a string.
+answer : 
+
+n1=input("Enter the character : ");
+answer="";
+for i in n1:
+    if(i not in answer):
+        answer+=i;
+print(answer);
+
+4....Find the largest word in a sentence.
+answer : 
+
+n1=input("Enter the word : ");
+largest="";
+words=n1.split();
+for i in words:
+    if(len(i)>len(largest)):
+        largest=i;
+print(largest);
+
+5....Find the smallest word in a sentence.
+answer : 
+
+n1=input("Enter the word : ");
+answer=n1.split();
+smallest=answer[0];
+for i in answer:
+    if(len(i)<len(smallest)):
+        smallest=i;
+print(smallest);
+
+6....Count occurrence of each character in a string.
+answer : 
+
+n1=input("Enter the word : ");
+answer="";
+for i in n1:
+    if(i not in answer):
+        print(i,"=",n1.count(i));
+        answer+=i;
+
+
+7....Replace vowels with *.
+answer : 
+
+n1=input("Enter the words : ");
+answer=""
+for i in n1:
+    if(i in "aeiou"):
+        answer+="*";
+    else:
+        answer+=i;
+print(answer);
+
+8....Toggle case of all characters in a string.
+answer : 
+
+n1=input("Enter the words : ");
+answer="";
+for i in n1:
+    if(i.isupper()):
+        answer+=i.lower();
+    else:
+        answer+=i.upper();
+print(answer);
+
+9....Find first non-repeated character.
+answer : 
+
+n1=input("Enter the words : ");
+answer="";
+
+for i in n1:
+    if(n1.count(i)==1):
+        print("First non repeated character : ",i);
+        break;
+
+10....Find first repeated character.
+answer : 
+
+n1=input("Enter the character : ");
+answer="";
+for i in n1:
+    if(n1.count(i)>1):
+        print("The repeated character ");
+        print(i);
+        break;
