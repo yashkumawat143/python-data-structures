@@ -1,0 +1,165 @@
+Basic Level list ....
+
+
+1....Create a list and print all elements.
+answer : 
+
+number=[1,2,3,4,5,];
+print(number);
+
+2....Find length of a list.
+answer :
+
+n1=input("Enter the words : ");
+answer=n1.split();
+result=len(answer);
+print(result);
+
+3....Add elements using append().
+answer : 
+
+n1=input("Enter the words : ");
+n2=input("add word at last : ");
+answer=n1.split();
+answer.append(n2);
+print(answer);
+
+
+4....Add elements using insert().
+answer : 
+
+n1=input("Enter the words : ");
+n2=int(input("Enter the position of word : "));
+n3=input("Enter the word : ");
+answer=n1.split();
+answer.insert(n2,n3);
+print(answer);
+
+5....Remove elements using remove().
+answer : 
+
+n1=input("Enter the words : ");
+answer=n1.split();
+print(answer);
+n2=input("Enter the word do you want to remove : ");
+answer.remove(n2);
+print(answer);
+
+6....Remove last element using pop().
+answer : 
+
+n1=input("Enter the words : ");
+answer=n1.split();
+answer.pop();
+print(answer);
+
+
+7....Access elements using index.
+answer : 
+
+n1=input("Enter the words : ");
+n2=int(input("Enter the number do you want to access : "));
+answer=n1.split();
+
+print(answer[n2]);
+
+
+8....Update an element in a list.
+answer : 
+
+n1=input("Enter the words : ");
+n2=int(input("Enter the pistion of word that do you want to update : "));
+n3=input("Enter the word : ");
+answer=n1.split();
+answer[n2]=n3;
+print(answer);
+
+9....Print list using loop.
+answer : 
+
+
+n1=input("Enter the words : ");
+answer=n1.split();
+for i in answer:
+    print(i);
+
+      OR
+
+n1=int(input("First number : "));
+n2=int(input("second number : "));
+n3=int(input("Third number : "));
+answer=[n1,n2,n3];
+for i in answer:
+    print(i);
+
+
+10....Reverse a list.
+answer : 
+
+n1=input("Enter the words : ");
+answer=n1.split();
+rev=[];
+for i in answer:
+    rev=[i]+rev;
+print(rev);
+
+11....Sort a list in ascending order.
+answer : 
+
+n1=input("Enter the words : ");
+answer=n1.split();
+answer.sort();
+print(answer);
+
+
+12....Sort a list in descending order.
+answer : 
+
+n1=input("Enter the words : ");
+answer=n1.split();
+answer.sort(reverse=True);
+rev="";
+for i in answer:
+    rev=rev+i+" ";
+print(rev);
+
+
+13....Find maximum element.
+answer :
+
+n1=input("Enter the words : ");
+answer=n1.split();
+largest="";
+for i in answer:
+    if(len(i)>len(largest)):
+        largest=i;
+print(largest);
+
+
+14....Find minimum element.
+answer : 
+
+n1=input("Enter the words : ");
+answer=n1.split();
+smallest=answer[0];
+for i in answer:
+    if(len(i)<len(smallest)):
+        smallest=i;
+print(smallest);
+
+
+15....Find sum of all elements.
+answer : 
+
+n1=input("Enter the numbers : ");
+answer=n1.split();
+sum=0;
+for i in answer:
+    sum=sum+int(i);
+print("The total sum of all elements = ",sum);
+
+
+
+
+
+
