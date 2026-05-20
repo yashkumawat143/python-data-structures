@@ -1,0 +1,96 @@
+Most Asked Interview Coding Questions....
+
+
+
+1....Reverse a string.
+answer : 
+
+n1=input("Enter the word : ");
+rev="";
+for i in n1:
+    rev=i+rev;
+print("The reversed : ",rev);
+
+
+2....Palindrome string.
+answer : 
+
+n1=input("Enter the word : ");
+tem=n1;
+rev="";
+for i in n1:
+    rev=i+rev;
+if(tem==rev):
+    print("It is a palandrome ");
+else:
+    print("It is not a palandrome");
+
+
+3....Count vowels and consonants.
+answer : 
+
+n1=input("Enter the word : ");
+countvowel=0;
+countconsonents=0;
+for i in n1:
+    if(i=="a" or i=="e" or i=="o" or i=="u" or i=="i"):
+        countvowel+=1;
+    else:
+        countconsonents+=1;
+print("The vowel : ",countvowel);
+print("The consonents : ",countconsonents);
+
+
+4....Character frequency.
+answer : 
+
+n1=input("Enter the words : ");
+temp="";
+for i in n1:
+    if(i not in temp):
+        print(i,"=",n1.count(i));
+        temp+=i;
+
+5....Remove duplicates.
+answer : 
+
+n1=input("Ente the word : ");
+temp="";
+for i in n1:
+    if(i not in temp):
+        temp+=i;
+print(temp);
+
+
+6....Anagram checking.
+answer : 
+
+n1=input("Enter the words : ");
+n2=input("Enter the words : ");
+if(sorted(n1)==sorted(n2)):
+    print("It is a anagram");
+else:
+    print("It is not a anagram");
+
+7....Reverse words in sentence.
+answer : 
+
+n1=input("Enter the words : ");
+answer=n1.split();
+rev=answer[::-1];
+print(" ".join(rev));
+
+8....First non-repeated character.
+answer : 
+
+n1=input("Enter the words : ");
+count=0;
+for i in n1:
+    if(n1.count(i)==1):
+        print(i);
+        break;
+
+
+ 
+
+
