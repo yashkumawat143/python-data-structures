@@ -1,0 +1,140 @@
+Intermediate Level list ....
+
+
+1....Count even and odd numbers in a list.
+answer : 
+
+n1=input("Enter the numbers : ");
+answer=n1.split();
+countodd=0;
+counteven=0;
+for i in answer:
+    if(int(i)%2==0):
+        counteven+=1;
+    else:
+        countodd+=1;
+print("Total even number = ",counteven);
+print("Total odd number =",countodd);
+
+
+2....Find average of list elements.
+answer : 
+
+n1=input("Enter the number : ");
+answer=n1.split();
+sum=0;
+for i in answer:
+    sum=sum+int(i);
+    
+average=(sum)/len(answer);
+print("The average of number = ",average);    
+
+
+
+3....Find largest number in a list.
+answer : 
+
+n1=input("Enter the number : ");
+answer=n1.split();
+largest="";
+for i in answer:
+    if(i>largest):
+        largest=i;
+print("The largest number = ",largest);
+
+
+4....Find second largest element.
+answer : 
+
+n1=input("Enter the number : ");
+answer=n1.split();
+number=[];
+for i in answer:
+    number.append(int(i));
+number.sort();
+print(number);
+print("The second largest number = ",number[-2]);
+
+
+5....Find smallest element.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=n1.split();
+smallest=int(answer[0]);
+for i in answer:
+    if(int(i)<smallest):
+        smallest=i;
+print("The smallest value = ",smallest);
+
+
+6....Find second smallest element.
+answer : 
+
+n1=input("Enter the elements = ");
+answer=n1.split();
+num=[];
+for i in answer:
+    num.append(int(i));
+num.sort();
+print(num[::-1]);
+print("The second smallest number = ",num[1]);
+
+
+
+7....Remove duplicates from a list.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=n1.split();
+num=[];
+for i in answer:
+    if(i not in num):
+        num.append(i);
+print(num);
+
+
+8....Merge two lists.
+answer : 
+
+n1=input("Enter the words : ");
+n2=input("Enter the words : ");
+
+answer=n1.split();
+answer2=n2.split();
+num=[];
+for i in answer:
+    num.append(i);
+for i in answer2:
+    num.append(i);
+print(num);
+
+
+9....Find common elements between two lists.
+answer : 
+
+n1=input("Enter the words : ");
+n2=input("Enter the words : ");
+answer1=n1.split();
+answer2=n2.split();
+num=[];
+for i in answer1:
+    for j in answer2:
+        if(i==j):
+            num.append(i);
+print("The commom word = ",num);
+        
+
+10....Check whether a list is sorted or not.
+answer : 
+
+n1=input("Enter the number : ");
+answer=n1.split();
+n2=answer.copy();
+answer1=sorted(answer);
+if(n2==answer1):
+    print("it is sorted");
+else:
+    print("It is not sorted");
+
+
