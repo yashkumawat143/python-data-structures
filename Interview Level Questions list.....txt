@@ -1,0 +1,148 @@
+Interview Level Questions ....
+
+
+1....Rotate a list left by one position.
+answer : 
+
+n1=input("Enter the words : ");
+answer=n1.split();
+answer=answer[1:]+[answer[0]];
+print(answer);
+
+
+2....Rotate a list right by one position.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=n1.split();
+answer=[answer[-1]]+answer[:-1];
+print(answer);
+
+
+3....Move all zeros to the end.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=n1.split();
+num=[];
+zero=[];
+for i in answer:
+    if(i=="0"):
+        zero.append(i);
+    else:
+        num.append(i);
+ans=num+zero;
+print(ans);
+    
+
+4....Find frequency of each element.
+answer : 
+
+n1=input("Enter the words : ");
+answer=n1.split();
+count="";
+num=[];
+for i in answer:
+    if(i not in num):
+        
+        print(i,"=",answer.count(i));
+        num.append(i);
+
+
+5....Separate even and odd numbers.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=n1.split();
+even=[];
+odd=[];
+for i in answer:
+    if(int(i)%2==0):
+        even.append(i);
+    else:
+        odd.append(i);
+print("The even number " ,even);
+print("The odd number ",odd);
+
+
+
+
+
+
+----> Extra Important Interview Questions.
+
+
+1....Reverse list without using reverse()
+answer : 
+
+n1=input("Enter the elements : ");
+answer=n1.split();
+rev=[];
+for i in answer:
+    rev=[i]+rev;
+print(rev);
+
+
+2....Remove duplicates without using set()
+answer : 
+
+n1=input("Enter the elements : ");
+answer=n1.split();
+num=[];
+for i in answer:
+    if(i not in num):
+        num.append(i);
+print(num);
+
+
+4....Find first repeating element.
+answer : 
+
+n1=input("Enter the words : ");
+answer=n1.split();
+for i in answer:
+     if(i==i):
+          print("The first repeated number = ",i);
+          break;
+
+
+5....Find first non-repeating element.
+answer : 
+
+n1=input("Enter the words : ");
+answer=n1.split();
+num=[];
+for i in answer:
+    if(answer.count(i)==1):
+        print("The first non-repeated number = ",i);
+        break;
+
+
+6....Merge two sorted lists.
+answer : 
+
+n1=input("Enter the numbers : ");
+n2=input("Enter the numbers : ");
+answer1=n1.split();
+answer2=n2.split();
+result=answer1+answer2;
+result.sort();
+print(result);
+
+
+7....Find intersection of two lists.
+answer : 
+
+
+n1=input("Enter the number : ");
+n2=input("Enter the number : ");
+answer1=n1.split();
+answer2=n2.split();
+num=[];
+for i in answer1:
+    if(i in answer2):
+        num.append(i);
+print(num);
+
+
+
