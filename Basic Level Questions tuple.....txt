@@ -1,0 +1,196 @@
+Basic Level Questions tuple....
+
+
+
+1....Create a tuple and print it.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+print(answer);
+
+
+2....Access first element of a tuple.
+answer : 
+
+n1=input("Enter the element : ");
+answer=tuple(n1.split());
+print(answer[0]);
+
+
+3....Access last element of a tuple.
+answer : 
+
+n1=input("Enter the element : ");
+answer=tuple(n1.split());
+print(answer[-1]);
+
+
+4....Find length of a tuple
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+print(len(answer));
+
+
+5....Count occurrences of an element using count().
+answer : 
+
+n1=input("Enter the elements : ");
+n2=input("Enter the element do you want to count : ");
+answer1=tuple(n1.split());
+print(answer1.count(n2));
+
+6....Find index of an element using index().
+answer : 
+
+n1=input("Enter the elements : ");
+n2=input("Enter the element do you want to find its position : ");
+answer=tuple(n1.split());
+print(answer.index(n2));
+
+
+7....Check whether an element exists in a tuple.
+answer : 
+
+n1=input("Enter the elements : ");
+n2=input("Enter the element do you want to check : ");
+answer=tuple(n1.split());
+if n2 in answer:
+    print("The element is exist ");
+else:
+    print("The element does not exist");
+
+
+8....Iterate through a tuple using loop.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+for i in answer:
+    print(i);
+
+9....Concatenate two tuples.
+answer : 
+
+n1=input("Enter the elements : ");
+n2=input("Enter the elements : ");
+answer1=tuple(n1.split());
+answer2=tuple(n2.split());
+result=answer1+answer2;
+print(result);
+
+
+10....Repeat tuple using *.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+n2=int(input("Enter how much do want to repeat : "));
+print(answer * n2);
+
+
+
+11....Convert list into tuple.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=n1.split();
+print("This is list",answer);
+answer=tuple(n1.split());
+print("This is tuple",answer);
+
+
+12....Convert tuple into list.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+print("Tuple ",answer);
+answer=list(answer);
+print("List ",answer);
+
+
+13....Create a single-element tuple.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+print(answer,);
+
+14....Slice a tuple.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+n2=int(input("Enter the number :"));
+result=answer[0:n2];
+print(result);
+
+
+15....Reverse a tuple.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+result=answer[::-1];
+print(result);
+
+
+16....Find maximum element in tuple.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+max="";
+for i in answer:
+    if(i>max):
+        max=i;
+print(max);
+
+
+17....Find minimum element in tuple.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+min=answer[0];
+for i in answer:
+    if(i<min):
+        min=i;
+print(min);
+
+18....Find sum of tuple elements.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(map(int,n1.split()));
+sum=0;
+for i in answer:
+    sum=sum+i;
+print(sum);
+
+19....Find average of tuple elements.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(map(int,n1.split()));
+sum=0;
+count=0;
+for i in answer:
+    sum=sum+i;
+    count+=1;
+average=sum/count;
+print(average);
+
+
+20....Convert string into tuple.
+answer : 
+
+n1=input("Enter the element : ");
+print(n1);
+answer=tuple(n1.split());
+print(answer);
+
+
