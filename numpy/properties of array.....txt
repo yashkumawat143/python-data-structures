@@ -1,0 +1,72 @@
+numpy in python....
+
+#properties of array ....
+
+1....find shape of array.
+answer :
+
+import numpy as np
+
+n1=input("Enter the elements : ");
+n2=input("Enter the elemr : ");
+
+answer=n1.split();
+answer2=n2.split();
+a=np.array([answer,answer2]); 
+print(a.shape);
+
+
+
+2....find the size.
+answer:
+
+import numpy as np
+
+n1=input("Enter the element : ");
+n2=input("Enter the seond element : ");
+answer1=n1.split();
+answer2=n2.split();
+a=np.array([answer1,answer2]);
+print(a.size);
+
+
+3....find dimension.
+answer:
+import numpy as np
+
+n1=input("Enter the element : ");
+answer=n1.split();
+a=np.array(answer);
+print(a.ndim);
+n2=input("Enter the second element : ");
+answer1=n2.split();
+a2=np.array([answer,answer1]);
+print(a2.ndim);
+n3=input("Enter the third element : ");
+answer2=n3.split();
+a3=np.array([[answer],[answer1],[answer2]]);
+print(a3.ndim);
+
+
+
+4....find type of element.
+answer:
+import numpy as np
+
+n1=input("Enter the element : ");
+answer=n1.split();
+a=np.array([answer]);
+print(a.dtype);
+
+
+
+5....convert into any type.
+answer:
+
+import numpy as np
+
+n1=input("Enter the element : ");
+answer=n1.split();
+a=np.array(answer);
+new=a.astype(int);
+print(new);
