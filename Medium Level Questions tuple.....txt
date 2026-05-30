@@ -1,0 +1,261 @@
+Medium Level Questions tuple....
+
+
+1....Perform tuple packing.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+print(answer);
+
+
+2....Perform tuple unpacking.
+answer : 
+
+n1=input("Enter the element : ");
+answer=tuple(n1.split());
+a,b,c=answer;
+print(a);
+print(b);
+print(c);
+
+ 	
+
+3....Swap two numbers using tuple unpacking.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+a,b=answer
+print(a);
+print(b);
+print("Now swipe the number ");
+a,b=b,a;
+print(a);
+print(b);
+
+
+4....Count even numbers in a tuple.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(map(int,n1.split()));
+count=0;
+for i in answer:
+    if(i%2==0):
+        count+=1;
+print("Total even number : ",count);
+
+
+
+5....Count odd numbers in a tuple.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(map(int,n1.split()));
+count=0;
+for i in answer:
+    if(i%2!=0):
+        count+=1;
+print("Total odd number : ",count);
+
+
+
+6....Find duplicate elements in a tuple.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+for i in answer:
+    if(answer.count(i)>1):
+     print(i);
+
+
+
+7....Remove duplicates from a tuple.
+answer :
+
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+new=();
+for i in answer: 
+    if(i not in new):
+        new+=(i,);
+print(new);
+
+
+8....Check whether all tuple elements are same.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+
+same=True;
+for i in answer:
+    if(i!=answer[0]):
+        same=False;
+        break;
+if(same):
+    print("All element are same");
+else:
+    print("Not same");
+
+9....Find second largest element in tuple.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(map(int,n1.split()));
+second=tuple(sorted(answer));
+
+print(second[-2]);
+
+
+10....Find second smallest element in tuple.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(map(int,n1.split()));
+second=tuple(sorted(answer));
+
+print(second[1]);
+
+11....Sort tuple elements in ascending order.
+answer : 
+
+n1=input("Enter the element : ");
+answer=tuple(n1.split());
+ans=tuple(sorted(answer));
+print(ans);
+
+
+12....Sort tuple elements in descending order.
+answer : 
+
+n1=input("Enter the element : ");
+answer=tuple(n1.split());
+ans=tuple(sorted(answer));
+rev=ans[::-1];
+print(rev);
+
+
+13....Check whether tuple is palindrome or not.
+answer : 
+
+n1=input("Enter the element : ");
+answer=tuple(n1.split());
+for i in answer:
+    ans=i[::-1];
+    if(i==ans):
+        print("it is a palindrome number =",i);
+    else:
+        print("it is not a palindrome number = ",i);
+
+
+14....Merge two tuples without using +.
+answer : 
+
+n1=input("Enter the first elements : ");
+n2=input("Enter the second elements : ");
+answer1=tuple(n1.split());
+answer2=tuple(n2.split());
+
+new=[];
+for i in answer1:
+    new.append(i);
+for i in answer2:
+    new.append(i);
+ans=tuple(new);
+print(ans);
+
+
+15....Find common elements between two tuples.
+answer : 
+
+n1=input("Enter the first elements : ");
+n2=input("Enter the second elements : ");
+answer1=tuple(n1.split());
+answer2=tuple(n2.split());
+new=();
+print("The common element : ");
+for i1 in answer1:
+    for i2 in answer2:
+        if(i1==i2 and i1 not in new):
+            new+=(i1, );
+print(new);
+
+
+16....Find unique elements in tuple.
+answer : 
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+
+for i in answer:
+    count=0;
+    for j in answer:
+        if(i==j):
+            count+=1;
+    if(count==1):
+        print("The unique value = ",i);
+
+
+
+
+17....Find frequency of each element in tuple.
+answer : 
+
+n1=input("Enter the element : ");
+answer=tuple(n1.split());
+num=();
+for i in answer:
+    count=0;
+    for j in answer:
+        if(i==j ):
+            count+=1;
+    if(i not in num):
+        num+=(i,);
+        print(i,"=",count);       
+
+
+
+18....Create nested tuple and access inner elements.
+answer : 
+
+n1=input("Enter the Element : ");
+n2=input("Enter the second element : ");
+answer1=tuple(n1.split());
+answer2=tuple(n2.split());
+t=(answer1,answer2);
+print(t);
+print("The first inner = ",t[0]);
+print("The second inner = ",t[1]);
+print("First and second =",t[0],t[1]);
+
+
+19....Flatten a nested tuple.
+answer : 
+
+n1=input("Enter the element : ");
+n2=input("Enter the second element : ");
+n3=input("Enter the third elements : ");
+answer1=tuple(n1.split());
+answer2=tuple(n2.split());
+answer3=tuple(n3.split());
+t=(answer1,answer2,answer3);
+num=();
+for i in t:
+    for j in i:
+       num+=(j,);
+print(num);
+
+
+20....Unpack tuple using *.
+answer : 
+
+n1=input("Enter the element : ");
+answer=tuple(n1.split());
+a,*b=answer;
+print(a);
+print(b);
+
+
+
