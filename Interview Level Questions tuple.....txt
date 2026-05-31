@@ -1,0 +1,219 @@
+Interview Level Questions tuple....
+
+1....Create dictionary using two tuples.
+answer : 
+
+n1=input("Enter the elements : ");
+n2=input("Enter the second element : ");
+answer1=tuple(n1.split());
+answer2=tuple(n2.split());
+
+d=dict(zip(answer1,answer2));
+print(d);
+
+
+2....Find intersection of two tuples.
+answer :
+
+n1=input("Enter the first elements : ");
+n2=input("Enter the second elements : ");
+answer1=tuple(n1.split());
+answer2=tuple(n2.split());
+for i in answer1:
+    for j in answer2:
+        if(i==j):
+            print(i);
+
+
+
+
+3....Find union of two tuples.
+answer : 
+
+n1=input("Enter the first element : ");
+n2=input("Enter the second element : ");
+answer1=tuple(n1.split());
+answer2=tuple(n2.split());
+num=();
+
+for i in answer1:
+    if(i not in num):
+        num+=(i,);
+for j in answer2:
+    if(j not in num):
+        num+=(j,);
+print(num);
+
+
+
+4....Find cumulative sum of tuple elements.
+answer:
+
+n1=input("Enter the elements : ");
+answer=tuple(map(int,n1.split()));
+sum=0;
+for i in answer:
+    sum=sum+i; 
+    print(sum);
+
+
+
+
+5....Find tuples having even sum.
+answer : 
+
+n1=input("Enter the element : ");
+answer=tuple(map(int,n1.split()));
+sum=0;
+for i in answer:
+    sum=sum+i;
+if(sum%2==0):
+    print("The sum is even ");
+else:
+    print("The sum is not even");
+
+
+6....Explain difference between list and tuple with program.
+answer : 
+
+print("It is list ");
+n1=input("Enter the elements : ");
+answer=n1.split();
+print(answer);
+#modifying list
+answer[0]="Hello";
+print("Modifying list = ",answer);
+
+print("It is tuple");
+n2=input("Enter the elements : ");
+answer1=tuple(n2.split());
+print(answer1);
+
+
+
+7....Explain why tuples are immutable.
+answer:
+
+print("Why tuple are immutable ");
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+print(answer);
+
+answer[0]="U";
+print(answer);
+
+print("It give error ");
+print("Because it is not change there value so, it is faster then list ,it is safer");
+
+
+
+8....Explain tuple packing and unpacking with examples.
+answer :
+
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+print("The packing ");
+print(answer);
+
+print("Now unpacking ");
+a,b,c=answer;
+print(a);
+print(b);
+print(c);
+
+9....Explain difference between mutable and immutable objects.
+answer:
+
+#mutable =
+
+print("Mutable");
+n1=input("Enter the elements : ");
+answer=n1.split();
+print(answer);
+print("Modifying");
+answer[0]="yash";
+print(answer);
+
+#immutable =
+
+print("Immutable");
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+print(answer);
+
+
+
+10....Write program to remove duplicates without using set.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+new=();
+for i in answer:
+    if(i not in new):
+        new+=(i,);
+print(new);
+
+
+
+11....Write program to find frequency of elements manually.
+answer :
+
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+new=();
+for i in answer:
+    count=0;
+    if(i not in new):
+        
+        for j in answer:
+            if(i==j):
+                count+=1;
+        new+=(i,);
+        print(i,"=",count);
+
+
+
+12....Write program to check whether tuple is sorted.
+answer:
+
+n1=input("Enter the element : ");
+answer=tuple(n1.split());
+answer2=answer;
+new=tuple(sorted(answer2));
+if(answer==new):
+    print("It is sort ");
+else:
+    print("It is not sort ");
+
+
+
+13....Write program to rotate tuple left by one position.
+answer:
+
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+new=answer[1:]+(answer[0],);
+print(new);
+
+
+
+14....Write program to rotate tuple right by one position.
+answer : 
+
+n1=input("Enter the elements : ");
+answer=tuple(n1.split());
+new=(answer[-1],)+answer[:-1];
+print(new);
+
+
+
+
+
+
+
+
+
+
+
+	
