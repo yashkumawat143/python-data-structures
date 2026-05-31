@@ -1,0 +1,92 @@
+numpy....
+
+
+chapter = 3 ----
+Indexing and slicing....
+
+
+1....indexing.
+answer:
+
+import numpy as np
+
+n1=input("Enter the elements : ");
+answer=n1.split();
+new=np.array(answer);
+print(new[0]);
+print(new[2]);
+print(new[-1]);
+
+
+
+2....slicing.
+answer:
+
+import numpy as np
+
+n1=input("Enter the elements : ");
+answer=n1.split();
+new=np.array(answer);
+print(new[1:6]);
+print(new[:5]);
+print(new[:-1]);
+print(new[::2]);
+
+
+
+3....fancying indexing.
+answer:
+
+import numpy as np
+
+n1=input("Enter the elements : ");
+answer=n1.split();
+new=np.array(answer);
+print(new[[1,4,5]]); #fancy indexing
+
+
+
+
+4....filtering/bollean masking.
+answer:
+
+import numpy as np
+
+n1=input("Enter the elements : ");
+answer=n1.split();
+new=np.array(answer,dtype=int);
+print(new[new>5]);
+
+
+
+5....reshape.
+answer:
+
+import numpy as np
+
+n1=input("Enter the elements : ");
+answer=n1.split();
+new=np.array(answer,dtype=int);
+a=new.reshape(2,3);
+print(a);
+
+
+
+6....flatting array.
+
+----ravel and flatten.
+answer:
+
+import numpy as np
+
+n1=input("Enter the elements : ");
+n2=input("Enter the another elements : ");
+answer=n1.split();
+answer1=n2.split();
+new=np.array([answer,answer1]);
+print(new.ravel());
+print(new.flatten());
+
+
+
+
