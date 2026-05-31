@@ -1,0 +1,81 @@
+numpy....
+
+Mathematical Functions of array ....
+
+
+
+1....find sum.
+answer:
+
+import numpy as np
+
+n1=input("Enter the element : ");
+answer=n1.split();
+new=np.array(answer,dtype=int);
+
+print(np.sum(new));
+
+
+
+2....find average.
+answer:
+
+import numpy as np
+
+n1=input("Enter the element : ");
+answer=n1.split();
+new=np.array(answer,dtype=int);
+print(np.average(new));
+
+
+
+3....find minimum value.
+answer:
+
+import numpy as np
+
+n1=input("Enter the numbers : ");
+answer=n1.split();
+new=np.array(answer,dtype=int);
+print(np.min(new));
+
+
+
+4....find maximum value.
+answer:
+
+import numpy as np
+
+n1=input("Enter the elements : ");
+answer=n1.split();
+new=np.array(answer,dtype=int);
+print(np.max(new));
+
+
+
+5....standard diviation.
+answer :
+
+import numpy as np
+
+n1=input("Enter the elements : ");
+answer=n1.split();
+new=np.array(answer,dtype=int);
+print(np.std(new));
+
+
+
+6....find varians.
+answer:
+
+import numpy as np
+
+n1=input("Enter the elements : ");
+answer=n1.split();
+new=np.array(answer,dtype=int);
+print(np.var(new));
+
+
+
+
+
