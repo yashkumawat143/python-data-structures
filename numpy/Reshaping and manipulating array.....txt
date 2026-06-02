@@ -1,0 +1,152 @@
+chapter 4 ----
+
+reshaping and manipulating array....
+
+
+1....insert.
+answer :
+-- 1D array-->
+
+import numpy as np
+
+n1=input("Enter the number : ");
+answer=n1.split();
+new=np.array(answer);
+print(new);
+a=np.insert(new,2,10);
+print(a);
+
+-- 2D array -->
+
+import numpy as np
+
+n1=input("Enter the number : ");
+n2=input("Enter the number : ");
+answer=n1.split();
+answer1=n2.split();
+new=np.array([answer,answer1]);
+
+print(new);
+a=np.insert(new,1,[[5,6,7]],axis=0);
+print(a);
+
+
+
+
+2....append.
+answer :
+
+import numpy as np
+
+n1=input("Enter the number : ");
+answer=n1.split();
+new=np.array(answer);
+a=np.append(new,[5,6,7]);
+print(a);
+
+
+
+-->
+3....if we want add in two array use concate.
+-->
+import numpy as np
+
+n1=input("Enter the number : ");
+n2=input("Enter the number : ");
+answer1=n1.split();
+answer2=n2.split();
+new1=np.array(answer1);
+new2=np.array(answer2);
+a=np.concatenate((new1,new2));
+print(a);
+
+
+
+-->
+4....delete.
+-->
+
+1D array.
+
+import numpy as np
+
+n1=input("Enter the number : ");
+answer=n1.split();
+new=np.array(answer);
+print(new);
+n2=int(input("Enter the position of number do you want to remove : "));
+a=np.delete(new,n2);
+print(a);
+
+
+
+-->
+2D array
+
+import numpy as np
+
+n1=input("Enter the number : ");
+n2=input("Enter the number : ");
+answer1=n1.split();
+answer2=n2.split();
+new=np.array([answer1,answer2]);
+print(new);
+a=np.delete(new,0,axis=0);
+print(a);
+
+
+
+
+---->
+5....stacking.
+---->
+
+row wise -->
+
+import numpy as np
+
+n1=input("Enter the number : ");
+n2=input("Enter the number : ");
+answer1=n1.split();
+answer2=n2.split();
+new=np.array(answer1);
+new2=np.array(answer2);
+a=np.vstack((new,new2));
+print(a);
+
+
+column wise -->
+
+import numpy as np
+
+n1=input("Enter the number : ");
+n2=input("Enter the number : ");
+answer1=n1.split();
+answer2=n2.split();
+new=np.array(answer1);
+new1=np.array(answer2);
+a=np.hstack((new,new1));
+print(a);
+
+
+
+
+6....split.
+-->
+
+----> np.split()
+
+import numpy as np
+
+n1=input("Enter the numbers : ");
+answer=n1.split();
+new=np.array(answer);
+print(np.split(new,2));
+
+
+
+
+
+
+
+
