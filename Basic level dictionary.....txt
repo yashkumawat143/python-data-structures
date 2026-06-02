@@ -1,0 +1,225 @@
+Basic level dictionary....
+
+
+
+1....Create a dictionary with keys: name, age, and city.
+answer :
+
+n1=input("Enter the name: ");
+n2=int(input("Enter the age : "));
+n3=input("Enter the city : ");
+student={
+    "name":n1,
+    "age":n2,
+    "city":n3
+
+}
+print(student.values());
+
+
+
+2....Access and print the value of the name key.
+answer :
+
+n1=input("Enter the name = ");
+n2=int(input("Enter the age = "));
+student={
+    "name":n1,
+    "age":n2
+
+}
+print(student.keys());
+
+
+
+3....Add a new key marks with a value of 90.
+answer :
+
+n1=input("Enter the name : ");
+n2=int(input("Enter the age : "));
+student={
+    "name":n1,
+    "age":n2
+
+}
+student["marks"]=90;
+print(student);
+
+
+
+4....Update the value of age.
+answer :
+
+n1=input("Enter the name =");
+n2=int(input("Enter the age = "));
+student={
+    "name":n1,
+    "age":n2
+}
+student.update({"age":25});
+print(student);
+
+
+
+5....Delete the city key from the dictionary.
+answer :
+
+n1=input("Enter the name : ");
+n2=int(input("Enter the age : "));
+n3=input("Enter the name of city : ");
+student={
+    "name":n1,
+    "age":n2,
+    "city":n3
+}
+del student["city"];
+print(student);
+
+
+
+6....Print all keys of a dictionary.
+answer : 
+
+n1=input("Enter the name : ");
+n2=int(input("Enter the age : "));
+
+student={
+    "name":n1,
+    "age":n2
+}
+print(student.keys());
+
+
+
+7....Print all values of a dictionary.
+answer :
+
+n1=input("Enter the name : ");
+n2=int(input("Enter the age : "));
+
+student={
+    "name":n1,
+    "age":n2
+}
+print(student.values());
+
+
+
+8....Print all key-value pairs of a dictionary.
+answer :
+
+n1=input("Enter the name : ");
+n2=int(input("Enter the age : "));
+student={
+    "name":n1,
+    "age":n2
+}
+print(student.items());
+
+
+
+9....Check whether a key exists in a dictionary.
+answer :
+
+n1=input("Enter the name : ");
+n2=input("Enter the age : ");
+student ={
+    "name":n1,
+    "age":n2
+}
+if("name" in student):
+    print("Key exist");
+else:
+    print("Ket not exist");
+
+
+
+10....Count the total number of key-value pairs in a dictionary.
+answer :
+
+n1=input("Enter the name : ");
+n2=int(input("Enter the age : "));
+student={
+    "name":n1,
+    "age":n2
+}
+print(len(student));
+
+
+
+11....Clear all elements from a dictionary.
+answer :
+n1=input("Enter the name : ");
+n2=int(input("Enter the age : "));
+student={
+    "name":n1,
+    "age":n2
+}
+print(student.clear());
+
+
+
+
+12....Copy a dictionary into another dictionary.
+answer :
+
+
+n1=input("Enter the name : ");
+n2=int(input("Enter the age : "));
+student={
+    "name":n1,
+    "age":n2
+}
+new=student.copy();
+print("Original",student);
+print("Copy",new);
+
+
+
+13....Use get() to access a value.
+answer :
+
+n1=input("Enter the name : ");
+n2=int(input("Enter the age : "));
+student={
+    "name":n1,
+    "age":n2
+}
+n3=input("Enter what do you want acces : ");
+new=student.get(n3);
+print(new);
+
+
+
+14....Find the length of a dictionary.
+answer :
+
+n1=input("Enter the name : ");
+n2=int(input("Enter the age : "));
+student={
+    "name":n1,
+    "age":n2
+}
+print(len(student));
+
+
+
+15....Create an empty dictionary and add three key-value pairs.
+answer :
+
+n1=input("Enter the key : ");
+n2=input("Enter the second key : ");
+n3=input("Enter the value : ");
+n4=input("Enter the second value : ");
+
+student={}
+
+student[n1]=n3;
+student[n2]=n4;
+print(student);
+
+
+
+
+
+
