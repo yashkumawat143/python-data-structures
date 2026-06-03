@@ -1,0 +1,47 @@
+chapter 6 ---->
+
+Handling missing and special values.
+
+
+
+three function---->
+
+
+1....np.isnan.
+answer:
+
+import numpy as np
+
+n1=input("Enter the number : ");
+answer=n1.split();
+new=np.array(answer,dtype=float);
+print(np.isnan(new));
+
+
+
+
+2....np.nan_to_num.
+answer :
+
+import numpy as np
+
+n1=input("Enter the number : ");
+answer=n1.split();
+new=np.array(answer);
+a=np.nan_to_num(new);
+print(a);
+
+
+
+3....np.isinf.
+answer:
+
+import numpy as np
+
+n1=input("Enter the number : ");
+answer=n1.split();
+new=np.array(answer,dtype=int);
+print(np.isinf(new));
+
+
+

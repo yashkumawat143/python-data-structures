@@ -1,0 +1,82 @@
+chapter 5 ----
+
+Broadcasting and vectorization ....
+
+
+1....discount.
+answer :
+import numpy as np
+
+n1=input("Enter the numbers : ");
+answer=n1.split();
+new=np.array(answer,dtype=int);
+discount=10;
+a=new-(new*discount/100);
+print(a);
+
+
+
+2....expanding single value.
+answer:
+
+import numpy as np
+
+n1=input("Enter the numbers : ");
+answer=n1.split();
+new=np.array(answer,dtype=int);
+a=new*2;
+print(a);
+
+
+
+3....mateching dimension.
+answer:
+
+import numpy as np
+
+n1=input("Enter the numbers : ");
+n2=input("Enter the number : ");
+n3=input("Enter the number : ");
+
+answer=n1.split();
+answer2=n2.split();
+answer3=n3.split();
+new=np.array([answer,answer2],dtype=int);
+new1=np.array(answer3,dtype=int);
+a=new+new1;
+print(a);
+
+
+
+
+4....incompatible shapes.
+answer :
+
+import numpy as np
+
+n1=input("Enter the numbers : ");
+n2=input("Enter the number : ");
+answer=n1.split();
+answer1=n2.split();
+new=np.array(answer,dtype=int);
+new2=np.array(answer1,dtype=int);
+
+a=new+new2;
+print(a);
+
+
+
+
+5....vectorization.
+answer:
+
+import numpy as np
+
+n1=input("Enter the number : ");
+answer=n1.split();
+new=np.array(answer,dtype=int);
+a=new*5;
+print(a);
+
+
+
