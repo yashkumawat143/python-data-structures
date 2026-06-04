@@ -1,0 +1,323 @@
+Medium Level dictionary....
+
+
+
+1....Loop through a dictionary and print keys only.
+answer : 
+
+n1=input("Enter the name : ");
+n2=int(input("Enter the age : "));
+
+student={
+    "name":n1,
+    "age":n2
+}
+for key in student:
+    print(key);
+
+
+
+2....Loop through a dictionary and print values only.
+answer : 
+
+n1=input("Enter the name : ");
+n2=int(input("Enter the age : "));
+
+student={
+    "name":n1,
+    "age":n2
+}
+for values in student.values():
+    print(values);
+
+
+
+3....Loop through a dictionary and print both keys and values.
+answer:
+
+n1=input("Enter the name : ");
+n2=int(input("Enter  the age : "));
+
+student={
+    "name":n1,
+    "age":n2
+}
+for i in student.items():
+    print(i);
+
+
+
+4....Find the maximum value in a dictionary.
+answer :
+
+n1=int(input("Enter the maths marks : "));
+n2=int(input("Enter the science marks : "));
+
+student={
+    "maths":n1,
+    "science":n2
+}
+print(max(student.values()));
+
+
+
+5....Find the minimum value in a dictionary.
+answer :
+
+n1=int(input("Enter the maths marks : "));
+n2=int(input("Enter the science marks : "));
+
+student={
+    "maths":n1,
+    "science":n2
+}
+print(min(student.values()));
+
+
+
+6....Find the sum of all values in a dictionary.
+answer :
+
+
+n1=int(input("Enter the number : "));
+n2=int(input("Enter the number : "));
+sum=0;
+student={
+    "sum1":n1,
+    "sum2":n2
+}
+for i in student.values():
+    sum=sum+i;
+print("Total sum = ",sum);
+
+
+
+7....Find the average of all values in a dictionary.
+answer :
+
+n1=int(input("Enter the number : "));
+n2=int(input("Enter the number : "));
+sum=0;
+student={
+    "name":n1,
+    "age":n2
+}
+for i in student.values():
+    sum=sum+i;
+a=(sum)/len(student);
+print(a);
+
+
+
+8....Merge two dictionaries.
+answer :
+
+n1=input("Enter the name : ");
+n2=input("Enter the age : ");
+n3=input("Enter the city : ");
+n4=input("Enter the state : ");
+student1={
+    "name":n1,
+    "age":n2
+}
+student2={
+    "city":n3,
+    "state":n4
+}
+student1.update(student2);
+print(student1);
+
+
+
+9....Create a dictionary from two lists using zip().
+answer :
+
+key=input("Enter the key : ");
+value=input("Enter the value : ");
+answer1=key.split();
+answer2=value.split();
+student=dict(zip(answer1,answer2));
+print(student);
+
+
+
+10....Sort a dictionary by keys.
+answer :
+
+
+n1=input("Enter the name : ");
+n2=int(input("Enter the age : "));
+student={
+    "name":n1,
+    "age":n2
+}
+a=sorted(student);
+print(a);
+
+
+
+11....Sort a dictionary by values.
+answer :
+
+n1=input("Enter the name : ");
+n2=input("Enter the city : ");
+
+student={
+    "name":n1,
+    "city":n2
+}
+a=sorted(student.values());
+print(a);
+
+
+
+12....Reverse the key-value pairs of a dictionary.
+answer :
+
+n1=input("Enter the name: ");
+n2=input("Enter the city name : ");
+
+student={
+    "name":n1,
+    "city":n2
+}
+reverse={}
+for keys,values in student.items():
+    reverse[values]=keys;
+print(reverse);
+
+    
+
+13....Find the key having the maximum value.
+answer :
+
+n1=int(input("Enter the marks : "));
+n2=int(input("Enter the marks : "));
+
+student={
+    "maths":n1,
+    "science":n2
+}
+if(n1>n2):
+    print("The maximum value : ","maths");
+else:
+    print("The maximum value : ","science");
+
+
+or
+
+n1=int(input("Enter the marks : "));
+n2=int(input("Enter the marks : "));
+
+student={
+    "maths":n1,
+    "science":n2
+}
+print(max(student,key=student.get));
+
+
+
+
+
+14....Find the key having the minimum value.
+answer :
+
+n1=int(input("Enter the marks : "));
+n2=int(input("Enter the marks : "));
+
+student={
+    "maths":n1,
+    "science":n2
+}
+print(min(student,key=student.get));
+
+
+
+15....Remove a specific key from a dictionary.
+answer :
+
+n1=input("Enter the name : ");
+n2=int(input("Enter the marks : "));
+
+student={
+    "name":n1,
+    "age":n2
+}
+n3=input("Enter the name do you want remove : ");
+del student[n3];
+print(student);
+
+
+
+16....Remove the last inserted key-value pair.
+answer :
+
+n1=input("Enter the name : ");
+n2=int(input("Enter the age : "));
+
+student={
+    "name":n1,
+    "age":n2
+}
+student.popitem();
+print(student);
+
+
+
+17....Check whether a value exists in a dictionary.
+answer:
+
+n1=input("Enter the name : ");
+n2=input("Enter the city : ");
+
+student={
+    "name":n1,
+    "city":n2
+}
+n3=input("Enter the value do you want to search : ");
+if(n3 in student.values()):
+    print("The values exist ");
+else:
+    print("The value does not exist");
+
+
+
+18....Create a dictionary of squares from 1 to 10.
+answer :
+
+student={}
+
+for i in range(1,11):
+    student[i]=i*i;
+print(student);
+
+
+
+19....Create a dictionary of cubes from 1 to 10.
+answer :
+
+student={}
+
+for i in range(1,11):
+    student[i]=i*i*i;
+print(student);
+
+
+
+20....Update multiple key-value pairs using update().
+answer : 
+
+n1=input("Enter the name : ");
+n2=int(input("Enter the age : "));
+
+student={
+    "name":n1,
+    "age":n2
+}
+student.update({"age":66});
+print(student);
+
+
+
+
+
