@@ -1,0 +1,228 @@
+Dictionary Interview Questions (Selected)
+
+
+1....Create a dictionary from two lists using zip().
+answer:
+
+keys=(["name","age"]);
+values=(["yash",144]);
+student={}
+
+student=dict(zip(keys,values));
+print(student);
+
+
+
+2....Merge two dictionaries into one.
+answer :
+
+n1=input("Enter the name:");
+n2=input("Enter the city:");
+n3=input("Enter the country:");
+n4=input("Enter the state : ");
+
+student={
+    "name":n1,
+    "city":n2
+}
+student1={
+    "Country":n3,
+    "state":n4
+}
+
+student.update(student1);
+print(student);
+
+
+
+3....Find the maximum value in a dictionary.
+answer :
+
+n1=input("Enter the name : ");
+n2=input("Enter the city name : ");
+
+student={
+    "name":n1,
+    "city":n2
+}
+print(max(student.values()));
+
+
+
+4....Find the key having the maximum value.
+answer :
+
+n1=input("Enter the name : ");
+n2=input("Enter the city name : ");
+
+student={
+    "name":n1,
+    "city":n2
+}
+print(max(student,key=student.get));
+
+
+
+5....Reverse the key-value pairs of a dictionary.
+answer :
+
+n1=input("Enter the name : ");
+n2=input("Enter the city name : ");
+
+student={
+    "name":n1,
+    "city":n2
+}
+rev={};
+for key,value in student.items():
+    rev[value]=key;
+print(rev);
+
+
+
+
+6....Find the second highest value in a dictionary.
+answer :
+
+
+n1=int(input("Enter the number : "));
+n2=int(input("Enter the number : "));
+n3=int(input("Enter the number : "));
+
+student={
+    "number1":n1,
+    "number2":n2,
+    "number3":n3
+}
+a=sorted(student.values(),reverse=True);
+print(a[1]);
+
+
+
+
+
+7....Find duplicate values in a dictionary.
+answer :
+
+n1=int(input("Enter the number : "));
+n2=int(input("Enter the number : "));
+n3=int(input("Enter the number : "));
+
+student={
+    "number1":n1,
+    "number2":n2,
+    "number3":n3
+}
+
+if(n1==n2):
+    print("Duplicate value : ",n1);
+            
+elif(n1==n3):
+    rint("Duplicate value ",n1);
+     
+elif(n2==n3):
+    print("Duplicate value ",n2); 
+
+else:
+    print("No duplicate value");
+       
+
+
+
+8....Remove duplicate values from a dictionary.
+answer :
+
+n1=int(input("Enter the number : "));
+n2=int(input("Enter the number : "));
+n3=int(input("Enter the number : "));
+
+student={
+    "number1":n1,
+    "number2":n2,
+    "number3":n3
+}
+
+if(n1==n2):
+    print("Duplicate value : ",n1);
+    del student["number1"];
+            
+elif(n1==n3):
+    print("Duplicate value ",n1);
+    del student["number3"];
+     
+elif(n2==n3):
+    print("Duplicate value ",n2); 
+    del student["number3"];
+
+else:
+    print("No duplicate value");
+
+print(student);
+       
+
+
+
+9....Create a dictionary using dictionary comprehension (squares of numbers 1–10).
+answer :
+
+student={};
+for i in range(1,11):
+    student[i]=i*i;
+print(student);
+
+
+
+10....Convert a list of tuples into a dictionary.
+answer :
+
+key=(["name","city"]);
+value=(["yash","jaipur"]);
+
+student=dict(zip(key,value));
+print(student);
+
+
+
+11....Access and update values in a nested dictionary.
+answer :
+
+
+student={
+    "student1":{
+        "name":"yash",
+        "age":12
+
+    },
+    
+    "student2":{
+        "name2":"yash1",
+        "age2":13
+    }
+
+}
+student["student1"]["age"]=15;
+student["student2"]["age2"]=56;
+
+print(student);
+
+
+
+12....Find common keys between two dictionaries.
+answer :
+
+student1={
+     "name":"yash",
+     "age":133
+}
+student2={
+    "name":"one piece",
+    "age1":122
+}
+for key in student1:
+    if(key in student2):
+        print("Common key =",key);
+
+
+
+
+
