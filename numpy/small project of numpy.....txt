@@ -1,0 +1,41 @@
+small project of numpy....
+
+📊 Project: Sales Data Analyzer
+
+
+
+
+----> find the sales of month and best month sales , worth month sales ,total sales of the year....
+
+
+
+
+
+answer :
+
+import numpy as np
+
+months=np.array(["jan","feb","march","april"]);
+print("Enter the sales of each month : ");
+new=[];
+for i in months:
+    value=float(input(f"{i} :" ));
+    new.append(value);
+new=np.array(new);
+print("The month sales ");
+print("Toal sales of the year : ",np.sum(new));
+print("Average month sale",np.mean(new));
+print("Highest sales : ",np.max(new));
+print("Lowest sale : ",np.min(new));
+
+best_sale=months[np.argmax(new)];
+worst_month=months[np.argmin(new)];
+
+print("The best month sale : ",best_sale);
+print("The worst month sale : ",worst_month);
+
+above_average=months[new>np.mean(new)];
+below_average=months[new<np.mean(new)];
+
+print("The above average sale : ",above_average);
+print("The below average sale : ",below_average);
