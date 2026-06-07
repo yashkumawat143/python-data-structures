@@ -1,0 +1,111 @@
+basic set questions ....
+
+
+
+1....Create a set with 5 fruits and print it.
+answer :
+
+n1=input("Enter the elements : ");
+n2=input("Enter the elements : ");
+n3=input("Enter the elements : ");
+n4=input("Enter the elements : ");
+n5=input("Enter the elements : ");
+
+s={n1,n2,n3,n4,n5};
+print(s);
+
+
+
+2....Add "grape" to a set and print it.
+answer :
+
+n1=input("Enter the element : ");
+n2=input("Enter the element : ");
+s={n1,n2};
+s.add("mango");
+print(s);
+
+
+
+3....Remove "banana" from a set using remove().
+answer :
+
+n1=input("Enter the elements : ");
+n2=input("Enter the elements : ");
+n3=input("Enter the element do you want to remove : ");
+s={n1,n2};
+s.remove(n3);
+print(s);
+
+
+
+4....What happens if you add a duplicate item to a set?
+answer :
+then it print only one of duplicate.
+n1=input("Enter the elements : ");
+n2=input("Enter the elements : ");
+s={n1,n2};
+print(s);
+
+
+
+5....Find the length of this set: {10, 20, 30, 40, 50}
+answer :
+
+n1=input("Enter the number : ");
+n2=input("Enter the number : ");
+n3=input("Enter the number : ");
+n4=input("Enter the number : ");
+n5=input("Enter the number : ");
+s={n1,n2,n3,n4,n5};
+print("The length : ",len(s));
+
+
+
+6....Check if "mango" exists in a set using in.
+answer :
+
+n1=input("Enter the elements : ");
+n2=input("Enter the elements : ");
+s={n1,n2};
+print("mango" in s);
+
+
+
+7....Create an empty set. (tricky — {} creates a dict, not a set!)
+answer :
+
+s=set();
+print(s);
+
+
+
+8....Convert this list to a set: [1, 2, 2, 3, 3, 4] — what is the output?
+answer :
+
+n1=input("Enter the number : ");
+answer=list(map(int,n1.split()));
+print("The list : ",answer);
+s=set(answer);
+print("The set : ",s);
+
+
+
+9....What is the difference between remove() and discard()?
+answer :
+
+
+s={"mango","apple","banana"};
+s.remove("mango");   #when mango does not present in set it show error
+s.discard("apple");  #when apple does not present in set it does not sow error
+print(s);
+
+
+
+10....Can a set contain duplicate values? Why?
+answer :
+
+s={1,2,3,4,4}; #it does not print duplicate value because it print only unique value
+print(s);
+
+
