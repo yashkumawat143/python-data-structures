@@ -1,0 +1,74 @@
+
+dictionary Student Management System project ....
+
+
+
+
+----> Create a Student Management System using dictionaries (Add, Search, Update, Delete).
+
+
+answer:
+
+
+new=[];
+while True:
+  print("Enter the elements do you want to access");
+  print("1.Add");
+  print("2.search");
+  print("3.update");
+  print("4.delete");
+  print("5.exit");
+  n1=input("Enter the elements : ");
+
+  if(n1=="add"):
+      n=input("Enter the name : ");
+      n3=int(input("Enter the roll number : "));
+      n2=int(input("Enter the marks : "));
+      student={
+          "name":n,
+          "roll no":n3,
+          "marks":n2
+      }
+      new.append(student);
+      print("Student added successfully");
+  elif(n1=="search"):
+     a=int(input("Enter the roll number do you want to search : "));
+     found=False;
+     for i in new:
+        if(i["roll no"]==a):
+           print(i);
+           found=True;
+           break;
+     if not found:
+        print("Not fount");
+  elif(n1=="update"):
+     roll=int(input("Enter the roll number : "));
+     key=input("Enter the key do want to update : ");
+     value=input("Enter the element : ");
+     found=False;
+     for i in new:
+        if(i["roll no"]==roll):
+           i[key]=value;
+           found=True;
+           print(i);
+           print("Successfully updated");
+           break;
+     if(not found):
+        print("Not found");
+  elif(n1=="delete"):
+     n=int(input("Enter the roll number : "));
+     found=False;
+     for i in new:
+        if(i["roll no"]==n):
+           found=True;
+           new.remove(i);
+           print(i);
+           print("Successfully removed");
+           break;
+     if not found:
+        print("Not found");
+  elif(n1=="exit"):
+     break;
+        
+    
+  
