@@ -1,0 +1,100 @@
+medium level set questions ....
+
+
+
+1....Find common elements between two sets A = {1,2,3,4} and B = {3,4,5,6}.
+answer :
+
+s={1,2,3,4,5};
+s1={2,5,6,7,8};
+print(s.intersection(s1));
+
+
+
+2....Find all elements from both sets combined (no duplicates).
+answer :
+
+s={1,2,3,4,5};
+s1={7,6,7,8,4};
+print(s.union(s1));
+
+
+
+3....Find elements in A that are not in B.
+answer :
+
+s={1,2,3,4,5,6};
+s1={7,8,6,5,4};
+print(s.difference(s1));
+
+
+
+
+4....Find elements that are in A or B but not in both (symmetric difference).
+answer :
+s={1,2,3,4,5};
+s1={1,2,5,6};
+print(s^s1);
+
+
+5....Check if {1, 2} is a subset of {1, 2, 3, 4}.
+answer :
+s={1,2,3,4,5};
+s1={1,2};
+if(s1.issubset(s)):
+    print("It is subset");
+else:
+    print("It is not a subset");
+
+
+
+6....Check if {1, 2, 3} is a superset of {1, 2}.
+answer :
+
+a={1,2,3,4,5};
+b={1,2};
+if(a.issuperset(b)):
+   print("It is superset");
+else:
+   print("It is not a superset"); 
+
+
+
+7....Remove all elements from a set using a single method.
+answer :
+
+s={1,2,3,4,5,6};
+s.clear();
+print(s);
+
+
+
+8....What is a frozenset? Create one.
+answer :
+This set is not changeable 
+
+code-->
+
+
+s=frozenset({1,2,3,4,5});
+s.add(9);    #it give error
+print(s);
+
+
+
+9....Can you use a regular set as a dictionary key? Why?
+answer :
+
+No , because the set is mutable and dictionary is immutable so, we can use with 
+frozenset because it is immutable .
+
+
+
+10....Iterate over a set and print each element.
+answer :
+
+a={1,2,3,4,5,6};
+for i in a:
+    print(i);
+
+
