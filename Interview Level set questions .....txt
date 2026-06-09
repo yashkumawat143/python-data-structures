@@ -1,0 +1,99 @@
+Interview Level set questions ....
+
+
+
+1....Remove duplicates from a list [1,1,2,3,3,4,5,5] using a set.
+answer :
+
+list=[1,2,3,4,5,5,6,6];
+n=[];
+for i in list:
+    if(i not in n):
+        a=n.append(i);
+print(n);
+a=set(n);
+print(a);
+
+or
+
+list=[1,2,3,4,4];
+a=set(list);
+print(a);
+
+
+
+2....Find common elements between two lists using sets.
+answer :
+
+list1=[1,2,3,4,5];
+list2=[1,2,6,7,8];
+n=[];
+for i in list1:
+    if(i in list2):
+        n.append(i)
+
+print(n);
+s=set(n);
+print(s);
+
+
+3....Given two lists, find elements present in one list but not the other.
+answer :
+
+list1=[1,2,3,4,5];
+list2=[1,2,6,7,8];
+n=[];
+for i in list1:
+    if(i not in list2):
+        n.append(i);
+print(n);
+s=set(n);
+print(s);
+
+
+
+4....Why is checking membership (in) faster in a set than a list?
+answer :
+because set use hash table but list count one by one then give output
+but the set use table.
+
+
+
+
+5....What happens internally when you add an element to a set? (hashing concept).
+answer :
+
+set={1,2,3,4};
+print(2 in set);
+
+
+
+6....Find the unique characters in a string "programming" using a set.
+answer :
+
+n1=input("Enter the number : ");
+
+a=set(n1);
+print(a);
+
+
+
+
+7....Two employees lists — find employees who are in both companies:
+
+pythoncompany_A = {"Ali", "Raj", "Sara", "Tom"}
+company_B = {"Sara", "Tom", "John", "Lisa"}
+# Find common employees
+
+
+answer :
+
+pythoncompany_A = {"Ali", "Raj", "Sara", "Tom"}
+company_B = {"Sara", "Tom", "John", "Lisa"}
+
+print(pythoncompany_A.intersection(company_B));
+
+
+
+
+
