@@ -1,0 +1,60 @@
+Student Registration System ---->
+
+
+In set 
+
+Requirements
+Add student names.
+Display all registered students.
+Search for a student.
+Remove a student.
+Count total registered students.
+Exit the program.
+
+
+--------->>>>>
+
+
+student=set();
+while True:
+ print();
+ print("<<---- STUDENT REGESTRATION SYSTEM ---->>");
+ print();
+ print(" ENTER THE REQUIREMENTS ");
+ print();
+ print("1.add");
+ print("2.display");
+ print("3.remove");
+ print("4.count");
+ print("5.Exit");
+ print();
+
+ n1=input("Enter the requriments : ");
+ if(n1=="add"):
+     n=input("Enter the name : ");
+     if(n in student):
+        print("You are allready registerd");
+        
+     else:
+      student.add(n);
+      print("You register successfully");
+ elif(n1=="display"):
+   print("The all student list ");
+   print(student);
+ elif(n1=="remove"):
+   n=input("Enter the name do you want to remove : ");
+   if(n in student):
+     student.remove(n);
+     print("Removes successfully");
+   else:
+     print("Name not exist");
+ elif(n1=="count"):
+   print(len(student));
+ elif(n1=="Exit"):
+   break;
+print();
+print("THANK YOU ");
+   
+   
+    
+
