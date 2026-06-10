@@ -1,0 +1,195 @@
+basic questions of array....
+
+
+
+1....Create an array and print it.
+answer :
+
+from array import *
+n1=input("Enter the array : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+print(arr);
+
+
+
+2....Print all elements of an array.
+answer :
+
+from array import *
+n1=input("Enter the numbers : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+for i in arr:
+    print(i);
+
+
+
+3....Find the length of an array.
+answer :
+
+from array import *
+n1=input("Enter the numbers : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+print(len(arr));
+
+
+
+4....Print the first element.
+answer :
+
+from array import *
+n1=input("Enter the numbers : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+print(arr[0]);
+
+
+
+5....Print the last element.
+answer :
+
+from array import *
+n1=input("Enter the number : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+print(arr[-1]);
+
+
+
+6....Access an element using its index.
+answer :
+
+from array import *
+n1=input("Enter the number : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+print(arr[0]);
+print(arr[1]);
+print(arr[2]);
+print(arr[3]);
+
+
+7....Insert an element at the beginning.
+answer :
+
+from array import *
+n1=input("Enter the number : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+arr.insert(0,20)
+print(arr);
+
+
+
+8....Insert an element at a specific index.
+answer :
+
+from array import *
+n1=input("Enter the numbers : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+n2=int(input("Enter the position do you want to add : "));
+n3=int(input("Enter the number dp ypu want to add : "));
+arr.insert(n2,n3);
+print(arr);
+
+
+
+9....Append an element at the end.
+answer :
+
+from array import *
+n1=input("Enter the number : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+n2=int(input("Enter the number do you want to add : "));
+arr.append(n2);
+print(arr);
+
+
+10....Delete an element by value.
+ANSWER :
+
+from array import *
+n1=input("Enter the number : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+n2=int(input("Enter the number do you want to delete : "));
+arr.remove(n2);
+print(arr);
+
+
+
+11....Delete an element by index.
+answer :
+
+from array import *
+n1=input("Enter the number : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+n2=int(input("Enter the index position do you want to remove : "));
+arr.pop(n2);
+print(arr);
+
+
+
+12....Search for an element.
+answer :
+
+from array import *
+n1=input("Enter the number : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+n2=int(input("Enter the number do you want to acces : "));
+if(n2 in arr):
+    print("Found , Index =",arr.index(n2));
+else:
+    print("Not found");
+
+
+
+
+13....Find the index of an element.
+answer :
+
+from array import *
+n1=input("Enter the number : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+n2=int(input("Enter the number do you want to find its index : "));
+if(n2 in arr):
+    print("Found",arr.index(n2));
+else:
+    print("Not found");
+
+
+14....Count occurrences of an element.
+answer :
+
+from array import *
+n1=input("Enter the number : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+n2=int(input("Enter the number do you want to count : "));
+print("Total number is",arr.count(n2));
+
+
+
+15....Replace an element with a new value.
+answer :
+
+from array import *
+n1=input("Ente the number : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+n2=int(input("Enter the number do you want to replace : "));
+n3=int(input("Enter the new number : "));
+if(n2 in arr):
+    arr[arr.index(n2)]=n3;
+    print(arr);
+else:
+    print("Not found");
+    
+
