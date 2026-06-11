@@ -1,0 +1,235 @@
+Medium Level array ....
+
+
+
+1....Find the maximum element.
+answer :
+
+from array import *
+
+n1=input("Enter the numbers : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+max=arr[0];
+for i in arr:
+    if(i>max):
+        max=i;
+print(max);
+
+
+
+
+2....Find the minimum element.
+answer :
+
+from array import *
+
+n1=input("Enter the number : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+min=arr[0];
+for i in arr:
+    if(i<min):
+        min=i;
+print("The minimum value : ",min);
+
+
+
+3....Find the sum of all elements.
+answer :
+
+from array import *
+
+n1=input("Enter the number : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+sum=0;
+for i in arr:
+    sum=sum+i;
+print("The total : ",sum);
+
+
+
+4....Find the average of all elements.
+answer :
+
+from array import *
+
+n1=input("Enter the number : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+sum=0;
+a=len(arr);
+for i in arr:
+    sum=sum+i;
+average=(sum)/a;
+print(average);
+
+
+
+5....Count even numbers in an array.
+answer :
+
+from array import *
+
+n1=input("Enter the number : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+count=0
+for i in arr:
+    if(i%2==0):
+        count+=1;
+print("The total even number : ",count);
+
+
+
+
+6....Count odd numbers in an array.
+answer :
+
+from array import *
+
+n1=input("Enter the numbers : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+count=0;
+for i in arr:
+    if(i%2!=0):
+        count+=1;
+print("The total odd number : ",count);
+
+
+
+
+7....Print all even elements.
+answer :
+
+from array import *
+
+n1=input("Enter the numbers : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+for i in arr:
+    if(i%2==0):
+        print(i);
+
+
+
+
+8....Print all odd elements.
+answer :
+
+from array import *
+
+n1=input("Enter the numbers : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+for i in arr:
+    if(i%2!=0):
+        print(i);
+
+
+
+
+9....Reverse an array.
+answer :
+
+from array import *
+
+n1=input("Enter the numbers : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+a=[];
+for i in arr[::-1]:
+    a.append(i);
+print(a);
+
+
+
+10....Sort an array in ascending order.
+answer :
+
+from array import *
+
+n1=input("Enter the numbers : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+
+print(sorted(arr));
+
+
+
+11....Sort an array in descending order.
+answer :
+
+from array import *
+
+n1=input("Enter the numbers : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+
+a=sorted(arr);
+print(a[::-1]);
+
+
+
+
+12....Find the second largest element.
+answer :
+
+from array import *
+
+n1=input("Enter the numbers : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+
+a=sorted(arr);
+print("The second largest : ",a[-2]);
+
+
+
+13....Find the second smallest element.
+answer :
+
+from array import *
+
+n1=input("Enter the numbers : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+
+a=sorted(arr);
+print("The second smallest : ",a[1]);
+
+
+
+14....Merge two arrays.
+answer :
+
+from array import *
+
+n1=input("Enter the number : ");
+n2=input("Enter the number : ");
+new=list(map(int,n1.split()));
+new1=list(map(int,n2.split()));
+arr=array('i',new);
+arr1=array('i',new1);
+merge=arr+arr1;
+print(merge);
+
+
+
+
+15....Remove duplicate elements.
+answer :
+
+from array import *
+
+n1=input("Enter the number : ");
+new=list(map(int,n1.split()));
+arr=array('i',new);
+a=[];
+for i in arr:
+    if(i not in a):
+        a.append(i);
+print(a);
+
