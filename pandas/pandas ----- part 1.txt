@@ -1,0 +1,234 @@
+pandas ----->
+
+
+1....data frame.
+answer :
+
+import pandas as pd
+data={
+    "name":['yash','zoro'],
+    "age":[10,20],
+    "city":['jaipur','jaipur2']
+}
+
+new=pd.DataFrame(data);
+print(new);
+
+or
+
+import pandas as pd
+data={
+    "name":['yash','zoro'],
+    "age":[10,20],
+    "city":['jaipur','jaipur2']
+}
+
+new=pd.DataFrame(data);
+print(new);
+
+new.to_csv("output.csv",index=False);
+
+
+or
+
+import pandas as pd
+
+data={
+    "name":['yash','zoro'],
+    "age":[13,12],
+    "city":['jaipur','jaipur2']
+}
+new=pd.DataFrame(data);
+
+new.to_excel("output.xlsx",index=False);
+print(new);
+
+
+
+
+
+
+
+
+
+2...... rows.
+answer :
+
+import pandas as pd
+new=pd.read_json("samle_data_json");
+
+print('10 rows from top');
+print(new.head());
+
+print('10 rows from lower');
+print(new.tail());
+
+
+
+
+
+
+3....understanding data.
+answer :
+
+---->>>> info()
+
+this is a metho,
+
+
+import pandas as pd
+new=pd.read_json("sample_data.json");
+print("the information of data set");
+print(new.info());
+
+
+
+or 
+
+
+import pandas as pd
+
+data={
+    "Name":['yash','zoro'],
+    "age":[12,34],
+    "city":['jaipur','one piece']
+}
+a=pd.DataFrame(data);
+
+
+print("the information of data set");
+print(a.info());
+
+
+
+
+4......describe().
+answer:
+
+import pandas as pd
+
+data={
+    "Name":['yash','zoro','priya','tanu','kannu'],
+    "age":[12,34,45,56,67],
+    "salary":[90000,40000,70000,80000,60000]
+}
+a=pd.DataFrame(data);
+print("Sample data");
+print(a);
+
+print("Descriptive statistics");
+print(a.describe());
+
+
+
+
+
+5....shape and column.
+answer :
+
+import pandas as pd
+
+data={
+    "name":["yash","zoro","Obito","luffy"],
+    "age":[12,34,45,56],
+    "salary":[2000,30000,60000,54000]
+}
+a=pd.DataFrame(data);
+print(a);
+print(f'shape:{a.shape}');
+print(f'column name : {a.columns}');
+
+
+
+6....select column---->>>>
+
+---->>>> a series
+
+import pandas as pd
+
+data={
+    "name":["yash","zoro","Obito","luffy"],
+    "age":[12,34,45,56],
+    "salary":[2000,30000,60000,54000]
+}
+a=pd.DataFrame(data);
+print(a);
+print("Name(single column return series)");
+new=a['name'];
+print(new);
+
+
+
+
+---->>>>data frame multiple column.
+
+import pandas as pd
+
+data={
+    "name":["yash","zoro","Obito","luffy"],
+    "age":[12,34,45,56],
+    "salary":[2000,30000,60000,54000]
+}
+a=pd.DataFrame(data);
+print(a);
+print("Name,age(multiple column)");
+new=a[["name","age"]];
+print(new);
+
+
+
+7....filtering rows.
+
+---->>>>
+
+#based on single condition
+
+import pandas as pd
+
+data={
+    "name":["yash","zoro","Obito","luffy"],
+    "age":[12,34,45,56],
+    "salary":[2000,30000,60000,54000]
+}
+a=pd.DataFrame(data);
+print(a);
+print("The salray grater then 30000");
+new=a[a["salary"]>30000];
+print(new);
+
+
+
+
+
+#combine multiple condition.
+
+import pandas as pd
+
+data={
+    "name":["yash","zoro","Obito","luffy"],
+    "age":[12,34,45,56],
+    "salary":[2000,30000,60000,54000]
+}
+a=pd.DataFrame(data);
+print(a);
+print("The salray grater then 30000 and also age is greator then 34");
+new=a[(a["salary"]>30000)&(a["age"]>34)];
+print(new);
+
+
+
+
+# or condition.
+
+import pandas as pd
+
+data={
+    "name":["yash","zoro","Obito","luffy"],
+    "age":[12,34,45,56],
+    "salary":[2000,30000,60000,54000]
+}
+a=pd.DataFrame(data);
+print(a);
+print("The age is greator then 34 or the salary greator then 30000");
+new=a[(a["age"]>34)|(a["salary"]>30000)];
+print(new);
