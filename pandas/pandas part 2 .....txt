@@ -1,0 +1,191 @@
+pandas part 2 ....
+
+
+
+
+# adding columns.
+-->>
+
+import pandas as pd
+
+data={
+    "name":["yash","zoro","Obito","luffy"],
+    "age":[12,34,45,56],
+    "salary":[2000,30000,60000,54000]
+}
+a=pd.DataFrame(data);
+print(a);
+a["bonous"]=a["salary"]*0.1;
+print(a);
+
+
+
+# insert data at a specific position
+-->>
+
+import pandas as pd
+
+data={
+    "name":["yash","zoro","Obito","luffy"],
+    "age":[12,34,45,56],
+    "salary":[2000,30000,60000,54000]
+}
+a=pd.DataFrame(data);
+print(a);
+a["bonous"]=a["salary"]*0.1;
+print(a);
+
+a.insert(0,"Employe id",[10,20,30,40]);
+print(a);
+
+
+
+
+
+# Update the value.
+---->>
+
+import pandas as pd
+
+data={
+    "name":["yash","zoro","Obito","luffy"],
+    "age":[12,34,45,56],
+    "salary":[2000,30000,60000,54000]
+}
+a=pd.DataFrame(data);
+print(a);
+
+a.loc[0,"salary"]=50000;
+print(a);
+
+
+
+or 
+
+
+import pandas as pd
+
+data={
+    "name":["yash","zoro","Obito","luffy"],
+    "age":[12,34,45,56],
+    "salary":[2000,30000,60000,54000]
+}
+a=pd.DataFrame(data);
+print(a);
+
+a.loc["salary"]=a["salary"]*1.5;
+print(a);
+
+
+
+
+
+# Remove the columns.
+
+
+---->>>>
+
+import pandas as pd
+
+data={
+    "name":["yash","zoro","Obito","luffy"],
+    "age":[12,34,45,56],
+    "salary":[2000,30000,60000,54000]
+}
+a=pd.DataFrame(data);
+print(a);
+
+a.drop(columns=["salary"],inplace=True);
+print(a);
+
+
+
+
+
+
+# Handling missing data.
+
+---->>>>
+
+import pandas as pd
+
+data={
+    "name":["yash",None,"Obito","luffy"],
+    "age":[12,None,45,56],
+    "salary":[2000,30000,None,54000]
+}
+a=pd.DataFrame(data);
+print(a);
+
+print(a.isnull().sum());
+
+
+
+
+
+#Remove the use less data.
+
+---->>>>
+
+import pandas as pd
+
+data={
+    "name":["yash",None,"Obito","luffy"],
+    "age":[12,None,45,56],
+    "salary":[2000,30000,None,54000]
+}
+a=pd.DataFrame(data);
+print(a);
+
+a.dropna(inplace=True);
+print(a);
+
+
+
+
+
+
+#Do you want to replace the use less data.
+
+---->>>>
+
+
+import pandas as pd
+
+data={
+    "name":["yash",None,"Obito","luffy"],
+    "age":[12,None,45,56],
+    "salary":[2000,30000,None,54000]
+}
+a=pd.DataFrame(data);
+print(a);
+
+a.fillna(0,inplace=True);
+print(a);
+
+
+
+
+
+
+#place the mean value.
+
+---->>>>
+
+import pandas as pd
+
+data={
+    "name":["yash",None,"Obito","luffy"],
+    "age":[12,None,45,56],
+    "salary":[2000,30000,None,54000]
+}
+a=pd.DataFrame(data);
+print(a);
+
+a["age"].fillna(a["age"].mean(),inplace=True);
+print(a);
+
+
+
+
+
