@@ -1,0 +1,222 @@
+part 3 pandas ....
+
+
+
+#Linear.
+
+---->>>>
+import pandas as pd
+
+data={
+    "time":[1,2,3,4,5],
+    "value":[10,None,30,None,50]
+}
+a=pd.DataFrame(data);
+print(a);
+
+a['value']=a['value'].interpolate(method="Linear");
+print(a);
+
+
+
+
+
+
+
+#sorting method
+
+---->>>>>sorting in column,
+
+....descending order.
+
+
+
+import pandas as pd
+
+data={
+    "name":['arun','tarun','anuj'],
+    "age":[10,20,8],
+    "salary":[200,3000,4000]
+}
+a=pd.DataFrame(data);
+
+a.sort_values(by="age",ascending=False,inplace=True);
+print(a);
+
+
+
+or
+
+
+
+import pandas as pd
+
+data={
+    "name":['arun','tarun','anuj'],
+    "age":[10,20,8],
+    "salary":[200,3000,4000]
+}
+a=pd.DataFrame(data);
+
+a.sort_values(by=["age","salary"],ascending=[True,False],inplace=True);
+print(a);
+
+
+
+
+#Aggregation.
+
+import pandas as pd
+
+data={
+    "name":['arun','tarun','anuj'],
+    "age":[10,20,8],
+    "salary":[200,3000,4000]
+}
+a=pd.DataFrame(data);
+
+s=a["salary"].mean();
+print(s);
+ 
+
+
+
+
+#Grouping.
+
+
+import pandas as pd
+
+data={
+    "name":['arun','tarun','anuj'],
+    "age":[10,20,8],
+    "salary":[200,377000,47000]
+}
+a=pd.DataFrame(data);
+
+group=a.groupby("age")["salary"].sum();
+print(group);
+ 
+
+
+
+
+or
+
+
+import pandas as pd
+
+data={
+    "name":['arun','tarun','anuj','ya'],
+    "age":[10,20,8,20],
+    "salary":[200,377000,47000,500]
+}
+a=pd.DataFrame(data);
+
+group=a.groupby("age")["salary"].sum();
+print(group);
+ 
+
+
+or
+
+
+import pandas as pd
+
+data={
+    "name":['arun','tarun','anuj','ya'],
+    "age":[10,20,8,20],
+    "salary":[200,377000,47000,500]
+}
+a=pd.DataFrame(data);
+
+group=a.groupby(["age","name"])["salary"].sum();
+print(group);
+ 
+
+
+
+
+
+
+#merging and joining the data.
+
+
+----->>>>>
+
+import pandas as pd
+
+customer={
+       "id":[1,2,3,4],
+       "name":['yash','hello','tanu','kannu']
+}
+order={
+    'id':[1,2,3,6],
+    'orderamount':[12,23,34,45]
+}
+s=pd.DataFrame(customer);
+s1=pd.DataFrame(order);
+merg=pd.merge(s,s1,on='id',how='inner');
+print(merg);
+
+
+
+
+#####
+---->>>>concatenation.
+
+
+---->>>>
+
+#verticaly.
+
+
+import pandas as pd
+
+customer={
+       "id":[1,2,3,4],
+       "name":['yash','hello','tanu','kannu']
+}
+order={
+    'id':[1,2,3,6],
+    'name':['pri','sunil','tannnu','kannnnu']
+}
+s=pd.DataFrame(customer);
+s1=pd.DataFrame(order);
+
+con=pd.concat([s,s1],axis=0,ignore_index=True);
+print(con);
+
+
+
+
+
+#horinzonal.
+
+import pandas as pd
+
+customer={
+       "id":[1,2,3,4],
+       "name":['yash','hello','tanu','kannu']
+}
+order={
+    'id':[1,2,3,6],
+    'name':['pri','sunil','tannnu','kannnnu']
+}
+s=pd.DataFrame(customer);
+s1=pd.DataFrame(order);
+
+con=pd.concat([s,s1],axis=1,ignore_index=True);
+print(con);
+
+
+
+
+
+
+
+
+
+
+
+
