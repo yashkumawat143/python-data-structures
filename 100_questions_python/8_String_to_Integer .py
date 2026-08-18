@@ -8,4 +8,4 @@ num1=int(n2);
 print(type(num));
 print(type(num1));
 a=num+num1;
-print(a);
+print("sum = ",a);
